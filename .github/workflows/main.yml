@@ -72,6 +72,6 @@ jobs:
           # npm install --prefix ./frontend
 
           # Stop and remove existing containers, then restart the services
-          docker-compose down
-          docker-compose up --build -d
+          docker compose down
+          docker compose up --build -d
         EOF
