@@ -60,7 +60,7 @@ jobs:
     # Step 2: Deploy to the server (git pull and docker-compose up)
     - name: Deploy to Server
       run: |
-        ssh -o StrictHostKeyChecking=no ubuntu@${{ secrets.SERVER_IP }} << 'EOF'
+        ssh -o StrictHostKeyChecking=no root@${{ secrets.SERVER_IP }} << 'EOF'
           # Navigate to the project directory
           cd /opt/node-react-project
 
